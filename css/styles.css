@@ -1,0 +1,138 @@
+:root {
+  --CLOUD: #F4F4FD;
+  --CORNFLOWER: #E7E9FC;
+  --IRIS: #4D5AE5;
+  --NAVY-BLUE: #2E2F42;
+  --OCEAN: #404BBF;
+  --SLATE: #434455;
+  --WHITE: #FFFFFF;
+
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: (var(--SLATE));
+  background-color: (var(--WHITE));
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--CORNFLOWER);
+  margin: 0 6rem;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--IRIS);
+}
+
+.logo-second {
+  color: var(--NAVY-BLUE);
+}
+
+.list {
+  display: flex;
+
+}
+
+.list-item a {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+  padding-right: 1rem;
+}
+
+.link:hover {
+  color: var(--OCEAN);
+}
+
+.link:focus {
+  color: var(--OCEAN);
+}
+
+.address a {
+  color: var(--SLATE);
+  margin-right: 1rem;
+  font-style: normal;
+}
+
+
+/* FILTERS */
+
+
+.filters ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.filters .btn {
+  margin-right: 2rem;
+  background-color: var(--CLOUD);
+  border: 1px solid var(--CORNFLOWER);
+  border-radius: 4px;
+  color: var(--IRIS);
+  padding: .75rem 1.5rem;
+}
+
+.filters .btn.active {
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
+}
+
+.row {
+  margin: 3rem auto;
+  width: 1128px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.project-card {
+  width: 360px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--NAVY-BLUE);
+  height: 312px;
+}
+
+.footer-description {
+  width: 264px;
+  margin-left: 6rem;
+ padding-top: 5.5rem;
+}
+
+.footer-description,
+.footer-description .logo-second {
+  color: var(--CLOUD);
+}
