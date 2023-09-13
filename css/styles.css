@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap'); */
 
 :root {
   --CLOUD: #F4F4FD;
@@ -26,11 +26,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
+a{
   text-decoration: none;
 
 }
@@ -52,11 +48,11 @@ h3 {
   font-size: 20px;
 }
 
-link {
+.link {
   font-size: .75rem;
   line-height: 1rem;
-  text-decoration-line: underline;
-  letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
+    text-decoration: none
 }
 
 /* NAV */
@@ -86,7 +82,7 @@ nav {
 
 .list {
   display: flex;
-  list-style: none
+  list-style: none;
 }
 
 .list-item .link{
@@ -103,10 +99,6 @@ nav {
   /* text-decoration: underline var(--NAVY-BLUE); */
 }
 
-address {
-  font-style: normal;
-
-}
 
 address a {
   color: var(--SLATE);
@@ -117,28 +109,37 @@ address a {
 .hero{
   background-color:var(--NAVY-BLUE)
 }
+.hero .btn{
+  background-color: var(--IRIS);
+  font-weight: 500;
+  color: var(--WHITE);
+}
 .hero-header{
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--WHITE);
 }
-.section-2 h2{
+.section-second > h2{
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
 }
-.section-2 .p-card{
+.section-second .p-card{
   color: var(--SLATE);
 }
-.header2{
+.header-second{
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--NAVY-BLUE);
+  letter-spacing: 0.02em;
 }
-.section4 {
+.section-team {
   background-color:var(--CLOUD);
+}
+.section-team > .header-second{
+  line-height: 1.2
 }
 
 .team_card{
@@ -163,6 +164,7 @@ background-color: var(--WHITE);
   padding: .75rem 1.5rem;
   cursor: pointer;
   letter-spacing: 0.04rem;
+  font-weight: 500;
 }
 
 .btn:active, .btn:hover, .btn:focus {
@@ -180,11 +182,29 @@ background-color: var(--WHITE);
 .project-card {
   width: 360px;
 }
+.header-card-content{
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+}
+.p-card-content{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--SLATE);
+}
 
 /* FOOTER */
 footer {
   background-color: var(--NAVY-BLUE);
   height: 312px;
+}
+
+.p-footer{
+  line-height: 1.5;
+  color: var(--CLOUD);
+  letter-spacing: 0.02em;
 }
 
 .footer-description {
