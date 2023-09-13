@@ -19,6 +19,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: #434455;
   background-color: (var(--WHITE));
   line-height: 1.5;
@@ -85,13 +86,13 @@ nav {
 
 .list {
   display: flex;
-
+  list-style: none
 }
 
-.list-item a {
+.list-item .link{
   font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.02em;
+  /* font-size: 16px;
+  letter-spacing: 0.02em; */
   color: var(--NAVY-BLUE);
   padding-right: 1rem;
 }
@@ -99,19 +100,54 @@ nav {
 .link:hover,
 .link:focus {
   color: var(--OCEAN);
-  text-decoration: underline var(--NAVY-BLUE);
+  /* text-decoration: underline var(--NAVY-BLUE); */
 }
 
-.address a {
+address {
+  font-style: normal;
+
+}
+
+address a {
   color: var(--SLATE);
   margin-right: 1rem;
-  font-style: normal;
 }
+
+/* Main Page - Studio */
+.hero{
+  background-color:var(--NAVY-BLUE)
+}
+.hero-header{
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--WHITE);
+}
+.section-2 h2{
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+}
+.section-2 .p-card{
+  color: var(--SLATE);
+}
+.header2{
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--NAVY-BLUE);
+}
+.section4 {
+  background-color:var(--CLOUD);
+}
+
+.team_card{
+background-color: var(--WHITE);
+}
+
 
 
 /* FILTERS */
-
-
 .filters ul {
   display: flex;
   justify-content: center;
@@ -129,17 +165,16 @@ nav {
   letter-spacing: 0.04rem;
 }
 
-.filters .btn:active {
+.btn:active, .btn:hover, .btn:focus {
   color: var(--WHITE);
   background-color: var(--OCEAN);
 }
-
+/* sections */
 .row {
   margin: 3rem auto;
   width: 1128px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .project-card {
