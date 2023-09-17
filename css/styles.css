@@ -58,12 +58,7 @@ h3 {
 
 /* NAV */
 nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--CORNFLOWER);
   margin: 0 6rem;
 }
 
@@ -82,21 +77,26 @@ nav {
 }
 
 .list {
-  display: flex;
+  /* display: flex; */
   list-style: none;
 }
 
-.address>.list {
+.adr {
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--SLATE)
 }
-
+.list-item > a{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 .list-item .link {
   font-weight: 500;
   color: var(--NAVY-BLUE);
-  padding-right: 1rem;
+
 }
 
 .link:hover,
@@ -164,7 +164,7 @@ address a {
 
 /* FILTERS */
 .filters ul {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   margin-top: 6rem;
 }
@@ -173,13 +173,11 @@ address a {
   margin-right: 2rem;
   background-color: var(--CLOUD);
   border: 1px solid var(--CORNFLOWER);
-  border-radius: 4px;
   color: var(--IRIS);
-  padding: .75rem 1.5rem;
   cursor: pointer;
   letter-spacing: 0.04em;
+  font-family: "Roboto";
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -212,7 +210,6 @@ address a {
 /* FOOTER */
 footer {
   background-color: var(--NAVY-BLUE);
-  height: 312px;
 }
 
 .p-footer {
